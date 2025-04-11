@@ -3,7 +3,7 @@
 import { createContext, useContext, useState, ReactNode } from 'react';
 
 interface Task {
-  id?: number | string;
+  id?: string;
   title?: string;
   name?: string;
   assignee?: string;

@@ -1,7 +1,7 @@
 import { useTasks } from '../components/TaskContext';
 
 interface TaskCardProps {
-  task: any;
+  task: string;
   index: number;
   column: 'TO DO' | 'IN PROGRESS' | 'BACKLOG' | 'COMPLETE';
 }

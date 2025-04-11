@@ -6,7 +6,7 @@ import AddTask from './AddTask';
 import { useTasks } from '../components/TaskContext';
 
 interface Task {
-  id: number | string;
+  id: string;
   title: string;
   [key: string]: any;
 }

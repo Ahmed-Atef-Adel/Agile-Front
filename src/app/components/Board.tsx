@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Column from './Column';
 import { useTasks } from '../components/TaskContext';
 
+
 const Board = () => {
   const { tasks, addColumn } = useTasks();
   const [isAddGroupOpen, setIsAddGroupOpen] = useState(false);
@@ -24,7 +25,7 @@ const Board = () => {
   return (
     <div className="flex gap-4 p-4 bg-gray-900 min-h-screen">
       {columns.map((column) => (
-        <Column key={column} title={column} tasks={tasks[column]} />
+        <Column key={column} title={column} tasks={tasks[column] || []} />
       ))}
       <div className="flex items-start">
         <button

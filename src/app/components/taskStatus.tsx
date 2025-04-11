@@ -4,7 +4,7 @@ import React, { useState } from "react";
 type Status = "pending" | "in_progress" | "completed" | "on_hold" | "canceled";
 
 type Task = {
-  id: string;
+  id: string ;
   title: string;
   status: Status;
 };
